@@ -1,0 +1,12 @@
+<div class="container composant">
+  <h2>{{ titre }}</h2>
+
+  <p [class.alert-success]="isAlert" [class.alert]="isAlert">Bonjour à vous ! Je m'appel <strong [innerHTML]="nom"></strong></p>
+  <p>Dans ce composant, mettez en place trois exemples de liaison. Un sur un attribut avec [], un autre sur un évènement avec () et le dernier avec une interpolation de variable.</p>
+
+  <button
+    class="btn btn-primary"
+    (click)="changeAlert()">Click Me !</button>
+</div>
+
+
